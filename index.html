@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Get Paid To Review Amazon Products</title>
+    <meta name="description" content="Join thousands of shoppers earning rewards by reviewing Amazon products from home">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #f1f5f9;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: 700;
+            color: #f59e0b;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .hero h1 .highlight {
+            color: #f59e0b;
+        }
+
+        .hero .subheadline {
+            font-size: 18px;
+            color: #cbd5e1;
+            margin-bottom: 10px;
+        }
+
+        .hero .location {
+            font-size: 16px;
+            color: #94a3b8;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #f59e0b;
+            color: #0f172a;
+            padding: 16px 48px;
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+        }
+
+        .cta-button:hover {
+            background: #d97706;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(245, 158, 11, 0.4);
+        }
+
+        /* How It Works Section */
+        .how-it-works {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .how-it-works h2 {
+            font-size: 28px;
+            margin-bottom: 40px;
+            color: #f1f5f9;
+        }
+
+        .steps {
+            display: grid;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .step {
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid rgba(245, 158, 11, 0.2);
+            border-radius: 12px;
+            padding: 30px 25px;
+            text-align: left;
+            transition: all 0.3s ease;
+        }
+
+        .step:hover {
+            border-color: rgba(245, 158, 11, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .step-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 12px;
+        }
+
+        .step-number {
+            background: #f59e0b;
+            color: #0f172a;
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .step-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #f59e0b;
+        }
+
+        .step-description {
+            color: #cbd5e1;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Metrics Section */
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            padding: 40px 20px;
+            margin: 40px 0;
+        }
+
+        .metric {
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 36px;
+            font-weight: 800;
+            color: #f59e0b;
+            margin-bottom: 8px;
+        }
+
+        .metric-label {
+            font-size: 14px;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 50px 20px;
+            background: rgba(15, 23, 42, 0.5);
+            margin: 40px 0;
+            border-radius: 16px;
+        }
+
+        .testimonials h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            gap: 25px;
+        }
+
+        .testimonial {
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            border-radius: 12px;
+            padding: 25px;
+        }
+
+        .testimonial-text {
+            font-size: 15px;
+            font-style: italic;
+            color: #e2e8f0;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .testimonial-author {
+            font-size: 14px;
+            color: #94a3b8;
+            font-weight: 600;
+        }
+
+        /* Earnings Section */
+        .earnings {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .earnings h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #f59e0b;
+        }
+
+        .earnings-stat {
+            font-size: 48px;
+            font-weight: 800;
+            color: #f59e0b;
+            margin-bottom: 10px;
+        }
+
+        .earnings-text {
+            font-size: 18px;
+            color: #cbd5e1;
+            margin-bottom: 30px;
+        }
+
+        /* CTA Section */
+        .final-cta {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(30, 41, 59, 0.8) 100%);
+            border-radius: 16px;
+            margin: 40px 0;
+        }
+
+        .final-cta h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .final-cta p {
+            font-size: 18px;
+            color: #cbd5e1;
+            margin-bottom: 30px;
+        }
+
+        .urgency-text {
+            font-size: 14px;
+            color: #f59e0b;
+            margin-top: 15px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #64748b;
+            font-size: 13px;
+            border-top: 1px solid rgba(148, 163, 184, 0.1);
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #f59e0b;
+        }
+
+        .disclaimer {
+            font-size: 11px;
+            color: #475569;
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .hero .subheadline {
+                font-size: 16px;
+            }
+
+            .cta-button {
+                padding: 14px 36px;
+                font-size: 16px;
+            }
+
+            .metric-value {
+                font-size: 28px;
+            }
+
+            .earnings-stat {
+                font-size: 36px;
+            }
+
+            .final-cta h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">amazon</div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>Get Paid To Review<br><span class="highlight">Amazon Products</span><br>from Home</h1>
+            <p class="subheadline">Join thousands of shoppers earning rewards and payments by sharing honest feedback on everyday products.</p>
+            <p class="location">We're Looking For People In Your Area</p>
+            <a href="https://gloffers.org/aff_c?offer_id=971&aff_id=159931" class="cta-button" target="_blank" rel="nofollow noopener noreferrer">Apply Now</a>
+        </div>
+
+        <!-- How It Works -->
+        <div class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-number">1</div>
+                        <div class="step-title">Check Eligibility</div>
+                    </div>
+                    <p class="step-description">Answer a few simple questions to see if you qualify. It takes less than 60 seconds.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-number">2</div>
+                        <div class="step-title">Review Products</div>
+                    </div>
+                    <p class="step-description">Try out selected Amazon products and submit your honest review based on your experience.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-header">
+                        <div class="step-number">3</div>
+                        <div class="step-title">Get Paid</div>
+                    </div>
+                    <p class="step-description">Get paid after completing reviews.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Metrics -->
+        <div class="metrics">
+            <div class="metric">
+                <div class="metric-value">24h</div>
+                <div class="metric-label">Fast Approval</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">28k+</div>
+                <div class="metric-label">Happy Reviewers</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">5.3M</div>
+                <div class="metric-label">Rewards Earned</div>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="testimonials">
+            <h2>What people are saying</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p class="testimonial-text">"I applied and got selected in less than a day — real rewards, no hassle."</p>
+                    <p class="testimonial-author">— Jamie, CA</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"I tried a few products and loved the experience. Cashouts were smooth."</p>
+                    <p class="testimonial-author">— Marcus, TX</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Earnings Opportunity -->
+        <div class="earnings">
+            <h2>Earnings opportunity</h2>
+            <div class="earnings-stat">$5.3 Million</div>
+            <p class="earnings-text">Our reviewers have earned over 5.3 Million in rewards this year.</p>
+        </div>
+
+        <!-- Final CTA -->
+        <div class="final-cta">
+            <h2>Ready to start?</h2>
+            <p>Opportunities are limited. Apply now to join thousands of reviewers in your area.</p>
+            <a href="https://gloffers.org/aff_c?offer_id=971&aff_id=159931" class="cta-button" target="_blank" rel="nofollow noopener noreferrer">Apply Now</a>
+            <p class="urgency-text">Limited spots available in your area</p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Available to residents of USA, UK, CA, AU aged 18 and over.</p>
+            <p class="disclaimer">© 2025 All rights reserved. This page is not affiliated with Amazon. Terms and conditions apply. This offer is sponsored by third-party partners who pay us when you participate. The offers are provided by partners who work with reward networks. Completing tasks and deals is required to qualify for rewards.</p>
+        </div>
+    </div>
+</body>
+</html>
